@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    
+}
+:root{
+    --blue : rgb(50, 150, 145);
+    --winnig-bolocks: azure;
+
+
+}
+body{
+    color: var(--blue);
+    font-family: 'Finger Paint', cursive;
+}
+h5{
+   color: azure;
+
+}
+h1{
+    font-size: 60px;
+    text-transform: uppercase;
+ }
+ .container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: #37505C;
+
+ }
+ #player_text{
+    margin-top: 30px;
+ }
+ #gameboard{
+    display: flex;
+    flex-wrap: wrap;
+    width: 450px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+ }
+ .block{
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    color: var(--blue);
+    font-size: 120px;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+ }
+ .block:nth-child(1),.block:nth-child(2),.block:nth-child(3){
+   border-top: 2px solid;
+
+ }
+ .block:nth-child(1),.block:nth-child(4),.block:nth-child(7){
+   border-left: 2px solid;
+
+ }
+
+ button {
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: var(--blue);
+    color: #333;
+    border-color: var(--blue);
+    font-size: 18px;
+    font-weight: 600;
+ }
+
+ button:hover {
+    cursor: pointer;
+    
+ }
+ @media (max-width:700px){
+   .container{
+      height: 130vh;
+      
+   }
+
+
+ }
+
